@@ -1,20 +1,3 @@
-// // METHOD 3:Using the JavaScript addEventListener() method to register an event handler for a DOM object.
-
-// document.getElementById("username").addEventListener("keyup", welcomeUser);
-// document.getElementById("username").addEventListener("change", welcomeUser);
-
-// function welcomeUser()
-// {
-//     let userName = document.getElementById("username").value;
-//     let message = "Welcome"
-//     if (userName != "")
-//     {
-//         message += ", " + userName + "!";
-//     }
-//     document.getElementById("greeting").textContent = message;
-
-
-
 // =============================================== PASSWORD vALIDATION ================
 
 var myInput = document.getElementById("pwd");
