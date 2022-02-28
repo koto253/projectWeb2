@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Front-End Courses</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/validation.css">
+    <link rel="stylesheet" href="/css/modify.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header id="header">
+        <img class="logo" src="/logo/logo.jpg" alt="">
+        <nav>
+            <ul>
+                <li><a href="home.html" class="home">Home</a></li>
+                <li><a href="_html.html">HTML</a></li>
+                <li><a href="_css.html">CSS</a></li>
+                <li><a href="_java.html">Javascript</a></li>
+            </ul>
+        </nav>
+        <a href="" class="log"><button>Log In</button></a>
+    </header>
+
+    <nav>
+        <h4 class="" id="demo"></h4>
+    </nav>
+
+    <main id="content">
+        <section class="containerUser">
+
+            <!-- CREATE ACCOUNT ----------------------------------------------------------------------------------------------->
+
+            <form action="file.php" method="post" class="form" id="signUpForm" > <!--* id="createAccount" -->
+
+                <h1 class="form_title">Create Account</h1>
+
+                
+                <section class="form_input-group">
+                    <label for="usermane">
+                        <input type="text" id="username" class="form_input" placeholder="Enter Username">
+                        <p class="form_input-error-message" id="usernameError"></p>
+                    </label>
+                    <div class="error">
+
+                        <p id="len" class="invalid">Minimum <b>4 characters</b></p>
+
+                    </div>
+
+                    <label for="email">
+                        <input type="text" class="form_input" placeholder="Enter your Email">
+                    </label>
+
+                    <label for="phone">
+                        <input type="tel" id="phone" class="form_input" placeholder="Enter Phone">
+                        
+                    </label>
+
+                    <label for="password">
+                        <input type="password" id="pwd" class="form_input"  placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}" title="At least 4 or more characters">
+                        
+                    </label>
+
+                    <div class="" id="message">
+                        
+                        <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+                        <p id="capital" class="invalid">A <b>capital</b> letter</p>
+                        <p id="number" class="invalid">A <b>number</b></p>
+                        <p id="length" class="invalid">Minimum <b>4 characters</b></p>
+
+                    </div>
+                    
+                </section>
+
+                
+
+                <input class="form_button" type="submit" value="SEND"></input>
+
+                <p class="form_text">
+                    <a href="logIn.html" class="form_link" id="linkLogin" onclick="myFunction()">Already have an account? sign in</a>
+                </p>
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Made by Ismael in NJ &copy; 2021 koto </p>
+		<div class="resources">
+			<h4>Resources:</h4>
+			<ul> 
+				<li><a href="https://pccc.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_32313_1&content_id=_2087124_1&mode=view">Prof Rodrigues</a></li>
+				<li><a href="https://www.w3schools.com//">w3schools</a></li>
+				<li><a href="https://www.youtube.com/watch?v=d34GsFz-HkY">iEatWebsites</a></li>
+			</ul>
+		</div>
+    </footer>
+
+    <script src="/javascript/main.js"></script>
+    <script src="javascript/events.js"></script>
+    <script src="/javascript/date.js"></script>
+    
+</body>
+</html>

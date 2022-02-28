@@ -1,0 +1,107 @@
+// // METHOD 3:Using the JavaScript addEventListener() method to register an event handler for a DOM object.
+
+// document.getElementById("username").addEventListener("keyup", welcomeUser);
+// document.getElementById("username").addEventListener("change", welcomeUser);
+
+// function welcomeUser()
+// {
+//     let userName = document.getElementById("username").value;
+//     let message = "Welcome"
+//     if (userName != "")
+//     {
+//         message += ", " + userName + "!";
+//     }
+//     document.getElementById("greeting").textContent = message;
+
+
+
+// =============================================== PASSWORD vALIDATION ================
+
+var myInput = document.getElementById("pwd");
+var letter = document.getElementById("letter");
+var capital = document.getElementById("capital");
+var number = document.getElementById("number");
+var length = document.getElementById("length");
+
+// When the user clicks on the password field, show the message box
+myInput.onfocus = function() {
+  document.getElementById("message").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput.onblur = function() {
+  document.getElementById("message").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput.onkeyup = function() {
+  // Validate lowercase letters
+  var lowerCaseLetters = /[a-z]/g;
+  if(myInput.value.match(lowerCaseLetters)) {  
+    letter.classList.remove("invalid");
+    letter.classList.add("valid");
+  } else {
+    letter.classList.remove("valid");
+    letter.classList.add("invalid");
+  }
+  
+  // Validate capital letters
+  var upperCaseLetters = /[A-Z]/g;
+  if(myInput.value.match(upperCaseLetters)) {  
+    capital.classList.remove("invalid");
+    capital.classList.add("valid");
+  } else {
+    capital.classList.remove("valid");
+    capital.classList.add("invalid");
+  }
+
+  // Validate numbers
+  var numbers = /[0-9]/g;
+  if(myInput.value.match(numbers)) {  
+    number.classList.remove("invalid");
+    number.classList.add("valid");
+  } else {
+    number.classList.remove("valid");
+    number.classList.add("invalid");
+  }
+  
+  // Validate password length
+  if(myInput.value.length >= 4) {
+    length.classList.remove("invalid");
+    length.classList.add("valid");
+  } else {
+    length.classList.remove("valid");
+    length.classList.add("invalid");
+  }
+  
+}
+
+// =========================== USERNAME VALIDATION =================
+
+var myInput2 = document.getElementById("username");
+var len = document.getElementById("len");
+
+// When the user clicks on the password field, show the message box
+myInput2.onfocus = function() {
+  document.getElementById("error").style.display = "block";
+}
+
+// When the user clicks outside of the password field, hide the message box
+myInput2.onblur = function() {
+  document.getElementById("error").style.display = "none";
+}
+
+// When the user starts to type something inside the password field
+myInput2.onkeyup = function() {
+  
+  // Validate password length
+  if(myInput2.value.length >= 4) {
+    len.classList.remove("invalid");
+    len.classList.add("valid");
+  } else {
+    len.classList.remove("valid");
+    len.classList.add("invalid");
+  }
+  
+}
+
