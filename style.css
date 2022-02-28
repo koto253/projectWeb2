@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: bisque;
+  font-family: "Ubuntu Mono", monospace;
+  max-width: 800px;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 3%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+h1 {
+  margin: 3%;
+}
+
+.log {
+  float: right;
+  background-color: blueviolet;
+  text-decoration: none;
+  border-radius: 8px;
+  letter-spacing: 2px;
+}
+
+hr {
+  height: 1px;
+  background-color: blueviolet;
+  clear: both;
+  width: 96%;
+  margin: auto;
+}
+
+.nav > li {
+  float: left;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background-color: blueviolet;
+  color: bisque;
+}
+.nav > li > a {
+  color: bisque;
+}
+
+.nav > li > a:hover {
+  color: rgb(248, 240, 229);
+}
